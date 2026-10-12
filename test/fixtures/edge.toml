@@ -1,0 +1,54 @@
+# Strings of every kind
+basic = "Tab\tquote\" backslash\\ unicode\u00e9 \U0001F600"
+literal = 'C:\Users\path'
+empty = ""
+blank = "   "
+multiline_basic = """
+Roses are red
+Violets are blue"""
+line_ending = """\
+    The quick brown \
+    fox jumps over \
+    the lazy dog.\
+    """
+multiline_literal = '''
+The first newline is
+trimmed in raw strings.
+   All other whitespace
+   is preserved.
+'''
+quotes = """Here are two quotes: "". Simple enough."""
+trailing_quotes = """Ends with two quotes"""""
+
+# Non-string values stay untouched
+int = +99
+hex = 0xDEADBEEF
+float = 6.626e-34
+inf = -inf
+bool = false
+odt = 1979-05-27 07:32:00Z
+ld = 1979-05-27
+lt = 07:32:00.999
+
+# Keys
+"quoted key" = "Quoted"
+'literal key' = "Literal"
+dotted.key.here = "Dotted"
+site."google.com" = "Site"
+
+[inline]
+point = { x = 1, y = 2, label = "Origin" }
+nested = { name = { first = "Tom", last = "Preston-Werner" } }
+matrix = [ ["a", "b"], ['c'], [1, 2] ]
+multiline_array = [
+  "first", # comment after item
+  "second",
+]
+
+[[products]]
+name = "Hammer"
+
+[[products]]
+
+[[products]]
+name = "Nail"

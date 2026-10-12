@@ -1,0 +1,19 @@
+# A comment
+
+[home_getting_started]
+other = "Get Started"
+
+[home_welcome]
+other = "Welcome!"
+
+[home_about]
+other = "About"
+
+[read_more]
+other = "Read more"
+
+[subscribe_rss]
+other = "Subscribe <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[languages]
+other = "Languages"

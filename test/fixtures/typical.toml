@@ -1,0 +1,29 @@
+# Comments in TOML look like this.
+################
+# SCALAR TYPES #
+################
+# Our root object (which continues for the entire document) will be a map,
+# which is equivalent to a dictionary, hash or object in other languages.
+# The key, equals sign, and value must be on the same line
+# (though some values can be broken over multiple lines).
+
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner" # Another comment
+
+[database]
+enabled = true
+ports = [8000, 8001, 8002]
+data = [["delta", "phi"], [3.14]]
+temp_targets = { cpu = 79.5, case = 72.0 }
+
+[servers] # Servers config
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+
+[servers.beta]
+ip = "10.0.0.2"
+role = "backend"

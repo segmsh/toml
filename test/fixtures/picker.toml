@@ -1,0 +1,16 @@
+singleString = "This is just a normal string."
+
+datePickerMinuteOne = "1 minute"
+datePickerMinuteOther = "%minute minutes"
+
+["@singleString"]
+context = "views:Home page"
+description = "Comment for the single string."
+
+["@datePickerMinute"]
+description = "Accessibility announcement for the selected minute on a time picker such as '15 minutes' or '15分'"
+plural = "plural minute"
+["@datePickerMinute".placeholders]
+["@datePickerMinute".placeholders.minute]
+description = "the number of minutes"
+example = "15"
